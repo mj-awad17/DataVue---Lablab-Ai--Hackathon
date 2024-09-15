@@ -123,10 +123,10 @@ def main():
         """, unsafe_allow_html=True)
 
     # Demo video
-    st.markdown("<h2 class='section-header'>🎥 See DataVue in Action</h2>", unsafe_allow_html=True)
+    #st.markdown("<h2 class='section-header'>🎥 See DataVue in Action</h2>", unsafe_allow_html=True)
     
     # Embed YouTube video using Streamlit's built-in method
-    st.video("https://www.youtube.com/embed/4eHreET_XYA")
+    #st.video("https://www.youtube.com/embed/4eHreET_XYA")
 
 
     # Main apps
