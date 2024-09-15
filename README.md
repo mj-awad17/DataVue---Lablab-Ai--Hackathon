@@ -31,7 +31,9 @@
 <h2 align="center">
   🚀 About DataVue
 </h2>
+
   ![WhatsApp Image 2024-08-30 at 22 40 54_207bfede](https://github.com/user-attachments/assets/aa143580-f541-4b2a-a27c-459ecaf30bcf)
+
 </p>
 
 DataVue is not just another data science tool; it's a revolutionary ecosystem designed to transform how we learn, understand, and apply data science. By seamlessly integrating cutting-edge AI with intuitive design, we're democratizing data science education and empowering the next generation of data wizards.
@@ -80,23 +82,6 @@ DataVue is not just another data science tool; it's a revolutionary ecosystem de
 
 ---
 
-<!-- Demo Section with Embedded Video -->
-<h2 align="center">
-  🎥 See DataVue in Action
-</h2>
-  
-  <div class="video-container">
-      <a href="https://youtu.be/4eHreET_XYA?si=jGYNiRt8aSfQoNd1" target="_blank">
-          <img src="https://img.youtube.com/vi/4eHreET_XYA/maxresdefault.jpg" alt="DataVue Demo Video Thumbnail">
-      </a>
-  </div>
-
-<p align="center">
-  👆 Click the image to watch our demo video and see how DataVue is changing the game!
-</p>
-
----
-
 <!-- Installation Section with Animated Terminal -->
 <h2 align="center">
   💻 Quick Start Guide
@@ -108,7 +93,7 @@ DataVue is not just another data science tool; it's a revolutionary ecosystem de
 
 ```bash
 # Clone the DataVue repository
-git clone https://github.com/muhammadibrahim313/DataVue--Hackathon-.git
+git clone https://github.com/mj-awad17/DataVue---Lablab-Ai--Hackathon.git
 
 # Navigate to the project directory
 cd datavue
