@@ -33,12 +33,16 @@ def load_css():
     .feature-box {
         background-color: #e6f2ff;
         border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
+        padding: 15px;
+        margin-bottom: 15px;
         transition: transform 0.3s ease-in-out;
+        font-size: 14px;
     }
     .feature-box:hover {
         transform: scale(1.05);
+    }
+    .feature-box strong {
+        font-size: 16px;
     }
     .feature-title {
         color: #4169e1;
@@ -49,9 +53,9 @@ def load_css():
     .app-button {
         background-color: white;
         color: white;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
-        padding: 8px 16px;
+        padding: 6px 12px;
         border-radius: 25px;
         text-align: center;
         margin: 5px;
@@ -75,12 +79,13 @@ def load_css():
     .circular-image {
         border-radius: 50%;
         overflow: hidden;
-        width: 120px;  /* Adjust the size as needed */
-        height: 120px; /* Adjust the size as needed */
+        width: 100px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid #1e90ff; /* Optional border */
+        border: 2px solid #1e90ff;
+        margin: 0 auto 10px auto;
     }
     .circular-image img {
         width: 100%;
@@ -93,22 +98,18 @@ def load_css():
 def new_line():
     st.markdown("<br>", unsafe_allow_html=True)
 
-# Define a function to load the Lottie animation
 def load_lottieurl(url: str):
     r = requests.get(url)
     if r.status_code != 200:
         return None
     return r.json()
 
-# Create the About Us page
 def about_page():
-    load_css()  # Load custom CSS
+    load_css()
     
-    # Title Page
     st.markdown("<h1 class='main-title'> 🔎 About Us - Data Vue</h1>", unsafe_allow_html=True)
     new_line()
 
-    # About the Project
     st.markdown("""
     <div class='tagline'>Welcome to Data Vue!</div>
     <p>Welcome to Data Vue! This application is designed to provide a comprehensive platform for data analysis and machine learning.
@@ -118,59 +119,55 @@ def about_page():
 
     st.markdown("<h2 class='section-header'>👤 Meet the Team</h2>", unsafe_allow_html=True)
 
-    # Define the team members with online image URLs
     team_members = [
         {
             "name": "M Jawad",
-            "role": "Sir",
-            "image": "https://media.licdn.com/dms/image/v2/D4D03AQGhdbU8hITDEA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709276424296?e=1730332800&v=beta&t=3RwehLr_ZcXAVxe2EZKHN5oaDPBxlaa_Jr9LjrSgFdo",  # Replace with the actual URL
+            "role": "",
+            "image": "https://media.licdn.com/dms/image/v2/D4D03AQGhdbU8hITDEA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709276424296?e=1730332800&v=beta&t=3RwehLr_ZcXAVxe2EZKHN5oaDPBxlaa_Jr9LjrSgFdo",
             "linkedin": "https://www.linkedin.com/in/muhammad-jawad-86507b201/",
             "github": "https://github.com/mj-awad17",
         },
         {
             "name": "M Ibrahim",
             "role": "",
-            "image": "https://media.licdn.com/dms/image/v2/D4D03AQFSX9z8C2gRTg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722410662074?e=1730332800&v=beta&t=meNgmw_h6m4cv_FzEP3fOZI-tjdaUGXcNPimiYMfDnQ",  # Replace with the actual URL
+            "image": "https://media.licdn.com/dms/image/v2/D4D03AQFSX9z8C2gRTg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722410662074?e=1730332800&v=beta&t=meNgmw_h6m4cv_FzEP3fOZI-tjdaUGXcNPimiYMfDnQ",
             "linkedin": "https://www.linkedin.com/in/muhammad-ibrahim-qasmi-9876a1297/",
             "github": "https://github.com/muhammadibrahim313",
         },
         {
-            "name": "Syed Faizan Ali",
+            "name": "Faizan Ali",
             "role": "",
-            "image": "https://avatars.githubusercontent.com/u/157225706?v=4",  # Replace with the actual URL
+            "image": "https://avatars.githubusercontent.com/u/157225706?v=4",
             "linkedin": "https://www.linkedin.com/in/syed-faizan-alii-/",
             "github": "https://github.com/SyedFaizanAlii",
         },
         {
-            "name": "Choudhry Shehryar",
+            "name": "Ch. Shehryar",
             "role": "",
-            "image": "https://avatars.githubusercontent.com/u/129526340?v=4",  # Replace with the actual URL
+            "image": "https://avatars.githubusercontent.com/u/129526340?v=4",
             "linkedin": "https://www.linkedin.com/in/choudhry-shehryar-3a949b1b6/",
             "github": "https://github.com/choudhryfrompak",
         },
         {
-            "name": "Muhammad Bilal",
+            "name": "M.Bilal",
             "role": "",
-            "image": "https://avatars.githubusercontent.com/u/149602572?v=4",  # Replace with the actual URL
+            "image": "https://avatars.githubusercontent.com/u/149602572?v=4",
             "linkedin": "https://www.linkedin.com/in/muhammad-bilal-a75782280/",
             "github": "https://github.com/bilal77511",
         },
         {
-            "name": "Muhammad Danish Mubashar",
+            "name": "M.Danish ",
             "role": "",
-            "image": "https://avatars.githubusercontent.com/u/173589701?v=4",  # Replace with the actual URL
+            "image": "https://avatars.githubusercontent.com/u/173589701?v=4",
             "linkedin": "https://www.linkedin.com/in/muhammad-danish-mubashar-002b912a0/",
             "github": "https://github.com/DanishMubashar",
         },
     ]
 
-    # Create columns for each team member
-    cols = st.columns(len(team_members))
+    cols = st.columns(3)
 
-    # Populate each column with a team member's details
-    for col, member in zip(cols, team_members):
-        with col:
-            # Display the image using st.image with customized styling
+    for i, member in enumerate(team_members):
+        with cols[i % 3]:
             st.markdown(f"""
                 <div class='circular-image'>
                     <img src='{member["image"]}' />
@@ -183,10 +180,12 @@ def about_page():
                 </div>
                 """, unsafe_allow_html=True
             )
+        
+        if (i + 1) % 3 == 0:
+            st.markdown("<br>", unsafe_allow_html=True)
 
     new_line()
 
-    # What this app does with the main, quickml, and study_time pages
     st.markdown("<h2 class='section-header'>What This App Does</h2>", unsafe_allow_html=True)
     st.markdown("""
     <div class='feature-box'>
