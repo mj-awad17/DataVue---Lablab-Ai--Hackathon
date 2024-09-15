@@ -141,15 +141,13 @@ def about_page():
             "linkedin": "https://www.linkedin.com/in/syed-faizan-alii-/",
             "github": "https://github.com/SyedFaizanAlii",
         },
-
-       {
+        {
             "name": "Choudhry Shehryar",
             "role": "",
             "image": "https://avatars.githubusercontent.com/u/129526340?v=4",  # Replace with the actual URL
             "linkedin": "https://www.linkedin.com/in/choudhry-shehryar-3a949b1b6/",
             "github": "https://github.com/choudhryfrompak",
         },
-
         {
             "name": "Muhammad Bilal",
             "role": "",
@@ -163,9 +161,7 @@ def about_page():
             "image": "https://avatars.githubusercontent.com/u/173589701?v=4",  # Replace with the actual URL
             "linkedin": "https://www.linkedin.com/in/muhammad-danish-mubashar-002b912a0/",
             "github": "https://github.com/DanishMubashar",
-        },
-
-       
+        },
     ]
 
     # Create columns for each team member
